@@ -1,8 +1,3 @@
-.slider-container {
-  display: flex;
-  overflow: hidden;
-}
-
 .slider {
   --slider-index: 0;
 

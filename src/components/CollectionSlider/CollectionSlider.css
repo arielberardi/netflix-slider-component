@@ -22,5 +22,10 @@
   gap: 0.25rem;
   align-items: center;
   justify-content: flex-end;
-  /* visibility: hidden; */
+  visibility: hidden;
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
 }

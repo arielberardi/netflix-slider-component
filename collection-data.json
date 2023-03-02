@@ -1,0 +1,71 @@
+{
+  "title": "Tendencias",
+  "width": 4,
+  "tiles": [
+    {
+      "img_url": "https://via.placeholder.com/210/00FF00?text=1",
+      "id": 1,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/220/00FF00?text=2",
+      "id": 2,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/230/00FF00?text=3",
+      "id": 3,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/240/00FF00?text=4",
+      "id": 4,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/250/00FF00?text=5",
+      "id": 5,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/260/00FF00?text=6",
+      "id": 6,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/270/00FF00?text=7",
+      "id": 7,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/280/00FF00?text=8",
+      "id": 8,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/290/00FF00?text=9",
+      "id": 9,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/290/00FF00?text=10",
+      "id": 10,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/290/00FF00?text=11",
+      "id": 11,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/290/00FF00?text=12",
+      "id": 12,
+      "title": ""
+    },
+    {
+      "img_url": "https://via.placeholder.com/290/00FF00?text=13",
+      "id": 13,
+      "title": ""
+    }
+  ]
+}
