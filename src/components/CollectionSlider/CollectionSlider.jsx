@@ -1,6 +1,6 @@
 import "./CollectionSlider.css";
 import PropTypes from "prop-types";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import PaginationBar from "../PaginationBar";
 import SliderArrow from "../SliderArrow";
 import Slider from "../Slider";
@@ -10,6 +10,10 @@ function CollectionSlider({ title, width, tiles }) {
   const [isMouseOver, setIsMouseOver] = useState(false);
   const paginationRef = useRef();
   const numberOfPages = Math.ceil(tiles.length / width);
+
+  useEffect(() => {
+    paginationRef.current.style.visibility = isMouseOver ? "visible" : "hidden";
+  }, [isMouseOver]);
 
   const generatePageBars = () => {
     const pageBars = [];
@@ -21,27 +25,12 @@ function CollectionSlider({ title, width, tiles }) {
     return pageBars;
   };
 
-  const limitRange = (value) => {
-    return Math.min(Math.max(value, 0), numberOfPages - 1);
-  };
+  const limitRange = (value) => Math.min(Math.max(value, 0), numberOfPages - 1);
 
-  const onSliderLeft = () => {
-    setCurrentPage(limitRange(currentPage - 1));
-  };
-
-  const onSliderRight = () => {
-    setCurrentPage(limitRange(currentPage + 1));
-  };
-
-  const onCollectionMouseOut = () => {
-    setIsMouseOver(false);
-    paginationRef.current.style.visibility = "hidden";
-  };
-
-  const onCollectionMouseOver = () => {
-    setIsMouseOver(true);
-    paginationRef.current.style.visibility = "visible";
-  };
+  const onSliderLeft = () => setCurrentPage(limitRange(currentPage - 1));
+  const onSliderRight = () => setCurrentPage(limitRange(currentPage + 1));
+  const onCollectionMouseOut = () => setIsMouseOver(false);
+  const onCollectionMouseOver = () => setIsMouseOver(true);
 
   return (
     <div
