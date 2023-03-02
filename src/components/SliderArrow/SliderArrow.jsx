@@ -16,7 +16,7 @@ function SliderArrow({ direction, handleClick, hidden }) {
       onClick={(event) => handleClick(event)}
       ref={buttonRef}
     >
-      {direction === "left" ? "<" : ">"}
+      {direction === "left" ? <>&#8249;</> : <>&#8250;</>}
     </button>
   );
 }
