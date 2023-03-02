@@ -1,0 +1,27 @@
+.slider-arrow {
+  width: 3rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: 0;
+  z-index: 10;
+  background-color: hsla(0, 0%, 0%, 0.25);
+  color: white;
+  font-size: 4rem;
+  transition: background-color 150ms ease-in-out, font-size 150ms ease-in-out;
+  /* visibility: hidden; */
+}
+
+.slider-arrow:hover {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  font-size: 5rem;
+}
+
+.slider-arrow.left {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.slider-arrow.right {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
